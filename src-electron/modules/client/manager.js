@@ -242,6 +242,7 @@ class Manager {
           localFile = fs.readdirSync(localFilePath)[0]
           let args = localFile.split(/\s+|\.|_/)
           localVersion = [args[1], args[2], args[3]].join('.')
+          this._logger.info(`localVersion===>${localVersion}`)
         } catch (err) {
           if (err) {
             this._logger.error('local file is not found...')
@@ -249,7 +250,7 @@ class Manager {
         }
 
         let stream
-
+        this._logger.info(`client.version===>${client.version}`)
         if (localVersion === client.version) {
           stream = fs.createReadStream(path.join(localFilePath, localFile))
         } else {
@@ -274,7 +275,7 @@ class Manager {
           )
         })
         let totalBytes = 0
-        if (client.version !== Settings.defaultVersion) {
+        if (client.version !== localVersion) {
           stream.on('response', (data) => {
             totalBytes = parseInt(data.headers['content-length'], 10)
             this._logger.info(`totalBytes ==> ${totalBytes}`)

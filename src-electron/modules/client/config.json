@@ -5,8 +5,8 @@
       "platforms": {
         "mac": {
           "download": {
-            "url": "",
-            "md5": "",
+            "url": "https://raw.githubusercontent.com/IMTTHOLDINGCORP/awallet/master/src/statics/mac/aether-darwin-0_0_1.tar.gz",
+            "md5": "0bf403b5c549be9d0e41ccc1b6cf6d5c",
             "type": "tar",
             "bin": "aether-darwin-0_0_1/aether"
           },
