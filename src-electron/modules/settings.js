@@ -6,7 +6,7 @@ import fs from 'fs-extra'
 import packageJson from '../../package.json'
 
 const _defaults = {
-  network: process.env.PROD ? 'test' : 'test',
+  network: process.env.PROD ? 'main' : 'test',
   nodeType: 'aether',
   ipcFile: 'aether.ipc',
   rpcPort: 18545,
