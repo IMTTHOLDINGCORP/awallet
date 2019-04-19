@@ -1,0 +1,39 @@
+{
+  "clients": {
+    "aether": {
+      "version": "0.0.1",
+      "platforms": {
+        "mac": {
+          "download": {
+            "url": "",
+            "md5": "",
+            "type": "tar",
+            "bin": "aether-darwin-0_0_1/aether"
+          },
+          "bin": "aether",
+          "commands": {
+            "sanity": {
+              "args": ["version"],
+              "output": ["aether", "0.0.1"]
+            }
+          }
+        },
+        "win": {
+          "download": {
+            "url": "",
+            "md5": "",
+            "type": "zip",
+            "bin": "aether-win-0_0_1\\aether.exe"
+          },
+          "bin": "aether.exe",
+          "commands": {
+            "sanity": {
+              "args": ["version"],
+              "output": ["aether", "0.0.1"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
