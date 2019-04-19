@@ -424,7 +424,6 @@ class AusdNode extends EventEmitter {
 
             // Starts Main net
             default:
-              args = ['--syncmode', syncMode]
           }
 
           const nodeOptions = Settings.nodeOptions
