@@ -424,6 +424,7 @@ class AusdNode extends EventEmitter {
 
             // Starts Main net
             default:
+              args = []
           }
 
           const nodeOptions = Settings.nodeOptions
