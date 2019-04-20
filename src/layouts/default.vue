@@ -23,8 +23,8 @@
                      :content-class="$q.theme === 'mat' ? 'bg-grey-2 shadow-5' : null" :content-style="{width:'22%'}">
       <div class="bg-white">
         <div class="row flex-center q-my-sm">
-          <!--<img alt="Awallet logo"
-               src="statics/awallet-logo@2x.png"/>-->
+          <img width="42" height="42" alt="Awallet logo"
+               src="statics/awallet-logo@2x.png"/>
           <q-btn flat
                  dense
                  disable
