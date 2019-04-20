@@ -20,8 +20,8 @@
         },
         "win": {
           "download": {
-            "url": "",
-            "md5": "",
+            "url": "https://raw.githubusercontent.com/IMTTHOLDINGCORP/awallet/master/src/statics/win/aether-win-0_0_1.zip",
+            "md5": "1ad02cc38ffca61bb4572ae672111c80",
             "type": "zip",
             "bin": "aether-win-0_0_1\\aether.exe"
           },
